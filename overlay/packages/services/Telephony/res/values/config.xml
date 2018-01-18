@@ -28,4 +28,8 @@
          This is used to support carriers which generate a recording tone to the remote party
          when a call recording app is in use. -->
     <bool name="config_support_telephony_audio_device">true</bool>
+
+    <!-- Show enabled LTE option for LTE device -->
+    <bool name="config_enabled_lte" translatable="false">true</bool>
+
 </resources>
