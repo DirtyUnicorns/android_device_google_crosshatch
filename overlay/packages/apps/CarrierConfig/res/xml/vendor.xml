@@ -98,6 +98,10 @@
     <carrier_config mcc="310" mnc="260" gid1="ddff">
         <boolean name="require_entitlement_checks_bool" value="false" />
     </carrier_config>
+    <carrier_config mcc="310" mnc="410">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="311" mnc="480">
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="carrier_volte_override_wfc_provisioning_bool" value="true" />
