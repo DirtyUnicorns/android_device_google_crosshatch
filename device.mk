@@ -321,6 +321,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.first_wb_delay_mins=180 \
     ro.zram.periodic_wb_delay_hours=24 \
 
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1
+
 # Disable snapshot timer
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_enabled=0 \
