@@ -63,6 +63,11 @@
     </carrier_config>
     <carrier_config mcc="302" mnc="220" gid1="5455">
         <int name="maxMessageSize" value="3670016" />
+        <int name="vvm_port_number_int" value="5499" />
+        <string name="vvm_destination_number_string">7723</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
+        <boolean name="vvm_cellular_data_required_bool" value="true" />
+        <boolean name="vvm_prefetch_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="302" mnc="221" gid1="5455">
         <int name="maxMessageSize" value="3670016" />
