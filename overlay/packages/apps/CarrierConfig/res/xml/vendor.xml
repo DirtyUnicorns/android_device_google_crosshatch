@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carrier_config_list>
+    <carrier_config>
+        <boolean name="world_phone_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="204" mnc="04" gid1="BAE0000000000000">
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
         <boolean name="carrier_volte_override_wfc_provisioning_bool" value="true" />
@@ -115,14 +118,9 @@
     </carrier_config>
     <carrier_config mcc="311" mnc="480">
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
-        <string name="carrier_setup_app_string">com.google.android.carrierentitlement/.VzwSetupActivity</string>
         <boolean name="carrier_volte_override_wfc_provisioning_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="ci_action_on_sys_update_bool" value="true" />
-        <string name="ci_action_on_sys_update_extra_string">ServerID</string>
-        <string name="ci_action_on_sys_update_intent_string">com.android.omadm.service.CONFIGURATION_UPDATE</string>
-        <string name="ci_action_on_sys_update_extra_val_string">com.vzwdmserver</string>
         <boolean name="editable_wfc_roaming_mode_bool" value="true" />
         <boolean name="disable_cdma_activation_code_bool" value="true" />
         <boolean name="enhanced_4g_lte_title_variant_bool" value="true" />
@@ -158,10 +156,8 @@
         <boolean name="wifi_calls_can_be_hd_audio" value="true" />
         <boolean name="additional_call_setting_bool" value="true" />
         <boolean name="aliasEnabled" value="true" />
-        <boolean name="allowAttachAudio" value="false" />
         <boolean name="hide_preferred_network_type_bool" value="false" />
         <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
-        <boolean name="operator_selection_expand_bool" value="true" />
         <boolean name="carrier_name_override_bool" value="true" />
         <boolean name="carrier_promote_wfc_on_call_fail_bool" value="true" />
         <boolean name="carrier_settings_enable_bool" value="true" />
@@ -175,15 +171,8 @@
         <boolean name="carrier_volte_provisioned_bool" value="true" />
         <boolean name="require_entitlement_checks_bool" value="false" />
         <boolean name="editable_wfc_mode_bool" value="true" />
-        <boolean name="show_cdma_choices_bool" value="true" />
-        <boolean name="use_rcs_presence_bool" value="true" />
-        <string-array name="signal_pco_receiver_string_array" num="1">
-            <item value="com.google.android.carrierentitlement/.VzwActivationReceiver" />
-        </string-array>
-        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.VzwEmergencyAddressActivity</string>
         <int name="wfc_spn_format_idx_int" value="1" />
         <int name="network_notification_delay_int" value="30000" />
-        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
     <carrier_config mcc="405" mnc="840">
         <boolean name="carrier_volte_available_bool" value="true" />
