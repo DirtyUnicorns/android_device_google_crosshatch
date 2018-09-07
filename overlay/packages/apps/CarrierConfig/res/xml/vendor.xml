@@ -88,6 +88,9 @@
         <int name="wfc_spn_format_idx_int" value="1" />
         <int name="network_notification_delay_int" value="30000" />
     </carrier_config>
+    <carrier_config mcc="310" mnc="150">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="310" mnc="260">
         <boolean name="carrier_vt_available_bool" value="false" />
         <boolean name="carrier_volte_available_bool" value="true" />
