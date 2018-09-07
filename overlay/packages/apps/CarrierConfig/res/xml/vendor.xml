@@ -68,6 +68,8 @@
         <string name="vvm_type_string">vvm_type_omtp</string>
         <boolean name="vvm_cellular_data_required_bool" value="true" />
         <boolean name="vvm_prefetch_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="302" mnc="221" gid1="5455">
         <int name="maxMessageSize" value="3670016" />
