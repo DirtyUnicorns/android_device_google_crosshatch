@@ -50,7 +50,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.apk_verity.mode=1
 
 PRODUCT_PACKAGES += \
-    messaging
+    messaging \
+    netutils-wrapper-1.0
 
 LOCAL_PATH := device/google/crosshatch
 SRC_MEDIA_HAL_DIR := hardware/qcom/media/sdm845
