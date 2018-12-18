@@ -66,12 +66,6 @@ on property:sys.boot_completed=1
     write /sys/class/devfreq/soc:qcom,l3-cdsp/governor userspace
     chown system system /sys/class/devfreq/soc:qcom,l3-cdsp/userspace/set_freq
 
-    # configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 300000
-
-    # configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq 825000
-
 # Disable console_suspend to get better logging for kernel crashes
 on boot
     write /sys/module/printk/parameters/console_suspend N
