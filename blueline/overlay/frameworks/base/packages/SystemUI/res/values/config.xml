@@ -25,7 +25,7 @@
     <integer-array name="config_doze_brightness_sensor_to_brightness">
         <item>-1</item> <!-- 0: OFF -->
         <item>1</item> <!-- 1: NIGHT -->
-        <item>10</item> <!-- 2: LOW -->
+        <item>15</item> <!-- 2: LOW -->
         <item>32</item> <!-- 3: HIGH -->
         <item>32</item> <!-- 4: SUN -->
     </integer-array>
