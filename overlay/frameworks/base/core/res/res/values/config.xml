@@ -434,4 +434,8 @@
         <item>com.felicanetworks.mfc</item>
         <item>com.felicanetworks.mfm</item>
     </string-array>
+
+    <!-- Whether the Dreamliner (Pixel Stand) service should be enabled -->
+    <bool name="config_enableDreamlinerService">true</bool>
+
 </resources>
