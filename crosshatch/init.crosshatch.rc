@@ -46,32 +46,3 @@ on property:sys.boot_completed=1
     # HardwareInfo needs to be able to read display info
     chmod 644 /sys/devices/platform/soc/soc:qcom,dsi-display@52/panel_info/panel0/serial_number
     chmod 644 /sys/devices/platform/soc/soc:qcom,dsi-display@52/panel_info/panel0/panel_vendor_name
-
-    # configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 576000
-
-    # configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq 825000
-
-    # Set I/O Scheduler tweaks
-    write /sys/block/sda/queue/scheduler maple
-    write /sys/block/sda/queue/read_ahead_kb 512
-    write /sys/block/sda/queue/iosched/writes_starved 4
-    write /sys/block/sda/queue/iosched/fifo_batch 16
-    write /sys/block/sda/queue/iosched/sync_read_expire 350
-    write /sys/block/sda/queue/iosched/sync_write_expire 550
-    write /sys/block/sda/queue/iosched/async_read_expire 250
-    write /sys/block/sda/queue/iosched/async_write_expire 450
-    write /sys/block/sda/queue/iosched/sleep_latency_multiple 10
-    write /sys/block/sdf/queue/scheduler maple
-    write /sys/block/sdf/queue/read_ahead_kb 512
-    write /sys/block/sdf/queue/iosched/writes_starved 4
-    write /sys/block/sdf/queue/iosched/fifo_batch 16
-    write /sys/block/sdf/queue/iosched/sync_read_expire 350
-    write /sys/block/sdf/queue/iosched/sync_write_expire 550
-    write /sys/block/sdf/queue/iosched/async_read_expire 250
-    write /sys/block/sdf/queue/iosched/async_write_expire 450
-    write /sys/block/sdf/queue/iosched/sleep_latency_multiple 10
-
-    # Disable sched boost
-    write /proc/sys/kernel/sched_boost 0
