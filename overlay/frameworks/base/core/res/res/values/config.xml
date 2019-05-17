@@ -321,7 +321,7 @@
     <!-- Tx current for wifi radio. 0 by default-->
     <integer translatable="false" name="config_wifi_tx_cur_ma">250</integer>
 
-    <!-- Operating volatage for wifi radio. 0 by default-->
+    <!-- Operating voltage for wifi radio. 0 by default-->
     <integer translatable="false" name="config_wifi_operating_voltage_mv">3800</integer>
 
     <!-- Config SoftAP 2G channel list -->
