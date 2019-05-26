@@ -70,7 +70,8 @@ AB_OTA_PARTITIONS += \
     boot \
     system \
     vbmeta \
-    dtbo
+    dtbo \
+    vendor
 
 # Skip product and system_ext partition for nodap build
 ifeq ($(filter %_nodap,$(TARGET_PRODUCT)),)
@@ -148,6 +149,12 @@ ifeq ($(PRODUCT_NO_PRODUCT_PARTITION), true)
 # no system_ext partition as well
 TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 endif
+
+# vendor.img
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
+endif
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 BOARD_SUPER_PARTITION_GROUPS := google_dynamic_partitions
