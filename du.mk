@@ -45,7 +45,5 @@ BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ3A.200705.002/6506677:us
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ3A.200705.002/6506677:user/release-keys
 
-BOARD_PREBUILT_VENDORIMAGE := vendor/images/crosshatch/vendor.img
-
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
