@@ -92,3 +92,8 @@ persist.bluetooth.bqr.min_interval_ms=500
 ## Disable touch heatmap
 #
 ro.input.video_enabled=false
+
+# missing vendor props
+drm.service.enabled=true
+media.mediadrmservice.enable=true
+ro.hardware.egl=adreno
