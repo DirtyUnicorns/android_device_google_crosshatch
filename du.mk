@@ -39,8 +39,8 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=crosshatch \
-    BUILD_FINGERPRINT=google/crosshatch/crosshatch:9/PQ3A.190605.003/5524043:user/release-keys \
-    PRIVATE_BUILD_DESC="crosshatch-user 9 PQ3A.190605.003 5524043 release-keys"
+    BUILD_FINGERPRINT=google/crosshatch/crosshatch:9/PQ3A.190705.003/5600800:user/release-keys \
+    PRIVATE_BUILD_DESC="crosshatch-user 9 PQ3A.190705.003 5600800 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
