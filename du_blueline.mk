@@ -25,7 +25,7 @@
 include vendor/du/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/google/blueline/aosp_blueline.mk)
+$(call inherit-product, device/google/crosshatch/aosp_blueline.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
