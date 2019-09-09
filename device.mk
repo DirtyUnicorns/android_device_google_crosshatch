@@ -149,7 +149,10 @@ AB_OTA_PARTITIONS += \
     boot \
     system \
     vbmeta \
-    dtbo
+    dtbo \
+    vendor
+
+BUILD_WITHOUT_VENDOR := true
 
 # Skip product partition for nodap build
 ifeq ($(filter %_nodap,$(TARGET_PRODUCT)),)

@@ -34,3 +34,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
+
+BOARD_PREBUILT_VENDORIMAGE := vendor/images/crosshatch/vendor.img
