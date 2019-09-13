@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
 # and crosshatch targets
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION  := true
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl.recovery \
     bootctrl.sdm845 \
