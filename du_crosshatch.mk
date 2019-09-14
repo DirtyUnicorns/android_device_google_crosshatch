@@ -38,9 +38,14 @@ PRODUCT_MODEL := Pixel 3 XL
 PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=crosshatch \
-    BUILD_FINGERPRINT=google/crosshatch/crosshatch:10/QP1A.190711.020/5800535:user/release-keys \
+    PRODUCT_NAME="crosshatch" \
+    TARGET_DEVICE="crosshatch" \
     PRIVATE_BUILD_DESC="crosshatch-user 10 QP1A.190711.020 5800535 release-keys"
+
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QP1A.190711.020/5800535:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/crosshatch/crosshatch:10/QP1A.190711.020/5800535:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
