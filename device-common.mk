@@ -148,7 +148,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_product=ext4 \
     POSTINSTALL_OPTIONAL_product=false \
 
-# Enable missing props
+# Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.opa.eligible_device=true \
-    ro.gfx.angle.supported=true
+    ro.thermal_warmreset = true \

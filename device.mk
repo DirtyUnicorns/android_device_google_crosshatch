@@ -321,10 +321,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.hardware.keystore_desede=true \
 
-# Native video calling
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.vt_avail_ovr=1
-
 # Disable snapshot timer
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.snapshot_enabled=0 \
@@ -364,13 +360,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health.storage@1.0-service
 
-# Light/Memtrack/Vibrator HALs
+# Light HAL
+PRODUCT_PACKAGES += \
+    lights.$(PRODUCT_PLATFORM) \
+    hardware.google.light@1.0-service
+
+# Memtrack/Vibrator HALs
 PRODUCT_PACKAGES += \
     memtrack.sdm845 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.vibrator@1.2-impl.crosshatch \
-    lights.$(PRODUCT_PLATFORM) \
-    hardware.google.light@1.0-impl \
     small_hals.crosshatch-service
 
 # Bluetooth HAL
@@ -418,6 +417,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/permissions/sku_G013B/android.hardware.nfc.ese.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/permissions/sku_G013C/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/permissions/sku_G013D/android.hardware.nfc.ese.xml
+
+PRODUCT_COPY_FILES += \
+    device/google/crosshatch/nfc/com.google.hardware.pixel.japan.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_G013B/com.google.hardware.pixel.japan.xml \
+    device/google/crosshatch/nfc/com.google.hardware.pixel.japan.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_G013D/com.google.hardware.pixel.japan.xml
 
 PRODUCT_COPY_FILES += \
     device/google/crosshatch/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
@@ -813,7 +816,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.svn=20
+    ro.vendor.build.svn=22
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.adb.secure=1
@@ -857,3 +860,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.apex.updatable=true
+
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1
