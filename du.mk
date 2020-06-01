@@ -40,12 +40,12 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="crosshatch" \
     TARGET_DEVICE="crosshatch" \
-    PRIVATE_BUILD_DESC="crosshatch-user 10 QQ2A.200501.001.B2 6352890 release-keys"
+    PRIVATE_BUILD_DESC="crosshatch-user 10 QQ3A.200605.001 6392402 release-keys"
 
-BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ2A.200501.001.B2/6352890:user/release-keys"
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ3A.200605.001/6392402:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ2A.200501.001.B2/6352890:user/release-keys
+    ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ3A.200605.001/6392402:user/release-keys
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/crosshatch/vendor.img
 
