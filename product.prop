@@ -99,7 +99,7 @@ persist.bluetooth.bqr.min_interval_ms=500
 #
 ro.input.video_enabled=false
 
-# missing vendor props
+# missing props
 drm.service.enabled=true
 media.mediadrmservice.enable=true
 ro.hardware.egl=adreno

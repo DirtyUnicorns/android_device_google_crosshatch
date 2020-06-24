@@ -15,8 +15,8 @@
    "branch":      "q10x"
  },
  {
-   "repository":  "android_vendor_images",
-   "target_path": "vendor/images",
+   "repository":  "DirtyUnicorns/android_vendor_qcom_opensource_interfaces",
+   "target_path": "vendor/qcom/opensource/interfaces",
    "branch":      "q10x"
  },
  {
