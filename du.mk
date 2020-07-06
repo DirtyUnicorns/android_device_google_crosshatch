@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2019 The Dirty Unicorns Project
+# Copyright (C) 2018-2020 The Dirty Unicorns Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,19 +33,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 PRODUCT_NAME := du_crosshatch
 PRODUCT_DEVICE := crosshatch
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3 XL
-PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="crosshatch" \
-    TARGET_DEVICE="crosshatch" \
-    PRIVATE_BUILD_DESC="crosshatch-user 10 QQ3A.200605.001 6392402 release-keys"
+    PRIVATE_BUILD_DESC="crosshatch-user 10 QQ3A.200705.002 6506677 release-keys"
 
-BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ3A.200605.001/6392402:user/release-keys"
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ3A.200705.002/6506677:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ3A.200605.001/6392402:user/release-keys
+    ro.build.fingerprint=google/crosshatch/crosshatch:10/QQ3A.200705.002/6506677:user/release-keys
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/crosshatch/vendor.img
 
