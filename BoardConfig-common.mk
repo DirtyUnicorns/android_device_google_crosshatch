@@ -347,6 +347,8 @@ TARGET_USES_MKE2FS := true
 #BOARD_PREBUILT_DTBIMAGE_DIR := device/google/crosshatch-kernel
 #endif
 
+BOARD_USES_CAF_LIBJSON := true
+
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b1c1-setup.sh
 -include vendor/google_devices/crosshatch/proprietary/BoardConfigVendor.mk
