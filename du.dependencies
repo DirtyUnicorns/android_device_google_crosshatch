@@ -1,0 +1,27 @@
+[
+ {
+   "repository":  "DirtyUnicorns/android_device_google_crosshatch-sepolicy",
+   "target_path": "device/google/crosshatch-sepolicy",
+   "branch":      "r11x"
+ },
+ {
+   "repository":  "DirtyUnicorns/android_kernel_google_bluecross",
+   "target_path": "kernel/google/bluecross",
+   "branch":      "r11x"
+ },
+ {
+   "repository":  "DirtyUnicorns/android_vendor_google",
+   "target_path": "vendor/google",
+   "branch":      "r11x"
+ },
+ {
+   "repository":  "DirtyUnicorns/android_vendor_qcom_opensource_interfaces",
+   "target_path": "vendor/qcom/opensource/interfaces",
+   "branch":      "r11x"
+ },
+ {
+   "repository":  "android_vendor_pixelgapps",
+   "target_path": "vendor/pixelgapps",
+   "branch":      "r11x"
+ }
+]
