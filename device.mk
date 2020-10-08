@@ -955,3 +955,7 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# Shared java libs
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras
